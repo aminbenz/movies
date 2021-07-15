@@ -1,0 +1,126 @@
+/*fix scrool esho*/
+
+[dir="rtl"] .nav1content {
+    /* width: 100%; */
+    /* overflow: hidden; */
+}
+
+    /*logo */
+
+[dir="rtl"] .logo{line-height: 70px;
+    background-image: url(../logo/asil.png);background-size: cover;width:100px;height:100px;margin-right: -15px;}
+[dir="rtl"] .nav1content .logo img {
+    display: none;
+}
+[dir="rtl"] #sign_up .btn-hover{
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+[dir="rtl"] *:not(i) {
+font-family: 'Tajawal', sans-serif;font-weight: auto;}
+
+/*nav mrnou icon*/
+[dir="rtl"] .menui {
+    padding: 5px 0px 5px 5px;   
+    cursor: pointer;
+}
+
+/*nav2 rotate icon genre*/
+[dir="rtl"] #igenre{transform: rotate(180deg);}
+
+[dir="rtl"] .nav2 h3 {font-size: 13px;}
+[dir="rtl"] .moviesposters .category {
+    
+    font-weight: 500;  
+}
+[dir="rtl"] .in .title {font-weight: 400;}
+
+/*nav1 icon notification change the number  to left*/
+[dir="rtl"] .nav1content .icon2 span {    
+left: -4px;   
+}
+
+[dir="rtl"] .notification {
+    right: auto;
+    left: 10px;}
+
+[dir="rtl"] .info-notification{
+text-align: right;}
+
+[dir="rtl"] .dropdawncontentlg{right: auto;
+    left: 15px;
+} 
+
+
+/*nav2 filter relase date no padding*/
+[dir="rtl"] .s1 h3 {
+    padding-right: 0;
+    padding-left: 15px;}
+
+/*nav2 filter relase date no padding*/
+[dir="rtl"] .dropdawncontent{left: auto;}   
+
+/*nav2 icon filter*/
+[dir="rtl"] .s1 i {
+    margin-left: 12px;
+    margin-right: -7px; } 
+
+    [dir="rtl"] .s2 i {
+        margin-left: 12px;
+        margin-right: -7px; }
+
+         [dir="rtl"] .s3 i {
+            margin-left: 12px;
+            margin-right: -7px; }
+
+/*nav2 genre cange hover effect direction*/         
+[dir="rtl"] element.style {
+    transform: translate(-12%, 0%);
+}
+[dir="rtl"] #genrep #genrehover{
+    transform: translate(120%,-0%);transition: all 0.5s;visibility: visible;}
+    
+
+
+/*nav2 icons change view*/
+[dir="rtl"] .nav2icons #i8 {
+    padding-left: 0;
+}
+
+
+[dir="rtl"] .moviesposters .title{
+    max-height: 24px;
+}
+
+
+
+/*view more to right*/
+[dir="rtl"] .movies .viewmore {
+ left: 0px; right: auto; 
+}
+
+/*change padding in trailer images x titles*/
+[dir="rtl"] .info-trailer {
+    padding-right: 8px;
+    
+}
+
+[dir="rtl"]  .moviesposters::before{
+    box-shadow: -3px 3px 0px 0px #4274ca;
+    }
+[dir="rtl"] .inmovies #playa{transform: rotate(120deg);}
+
+/*change padding in trailer images x titles ------style="width:95%;margin:10px auto;"    teatre width:92%;margin:10px auto;*/
+
+/*change margin direction */
+[dir="rtl"] .moviesposters .inmovies #icondate {
+    margin-left: 3px;}
+.inmovies #date{float: left;}
+
+/* [dir="rtl"] .stars{display: flex;
+    flex-direction: row-reverse;
+    bottom: 3px;
+}
+[dir="rtl"] .stars i{margin-right: 2px;}
+ */

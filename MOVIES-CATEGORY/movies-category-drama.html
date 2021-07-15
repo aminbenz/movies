@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> movies | drama</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="./css/font-awesome.min.css ">
+    <link rel="stylesheet" href="./css//moviescategoryt.css">
+    <link rel="stylesheet" href="../css/NAV.css">
+    
+    </head>
+    <body>
+    <div class="nav1">
+        <div class="nav1content">
+                                                <!---------------- menou bar--------------->
+        <div class="icon1" id="menu">
+        <a id="menuu" href="#"><i class="fa fa-bars " aria-hidden="true" id="menui"></i > </a> 
+        <div class="dropdawn-i1" id="menucontent">
+            
+            <ul class="ul1">
+                <h2 id="x" style="transform: scaleX(1.3); background-color: rgba(32, 178, 171, 0);color: rgba(226, 226, 226, 0.993);height: 50px; width: 15px;font-size: 30px;right: 0;position: absolute;margin-top:-35px;padding-right:-20px;">x</h2>
+                <div class="profile">
+                <div class="imgprofile">  </div>
+                <a href="../MOVIES-LOGINxSIGNUP/YourAcount.html">   <span> my account</span>  </a>
+                </div>
+        
+                <a href="./MOVIES-CATEGORY/movies-category-toptranding.html"> 
+                    
+                <li class="topgen"><i style="color: yellow;" class="fa fa-bolt" aria-hidden="true"></i> top Trending</li>
+                </a>
+                <a href="./MOVIES-CATEGORY/movies-category-lastedfilms.html"> 
+                <li class="topgen"><i style="color: lightseagreen;" class="fa fa-newspaper-o" aria-hidden="true"></i>released last</li>
+                </a>
+                <a href="./MOVIES-CATEGORY/movies-category-recommended.html"> 
+        
+                    <li class="topgen"><i style="color: rgb(255, 30, 30);" class="fa fa-fire" aria-hidden="true"></i>recommended </li>
+                    </a>
+                <a href="./MOVIES-CATEGORY/movies-category-lastestv.html"> 
+                
+                    <li class="topgen "id="topgenlast"><i style="color: rgb(255, 131, 30);" class="fa fa-television" aria-hidden="true"></i>latest TV-Series</li>
+                    </a>
+                <a href="./movies-category-action.html"> <li class="bottomgen">action</li></a>
+                <a href="./movies-category-comedy.html"> <li class="bottomgen">comedy</li></a>
+                <a href="./movies-category-drama.html"> <li class="bottomgen">drama</li></a>
+                <a href="./movies-category-horro.html"> <li class="bottomgen">horror</li></a>
+                <a href="./movies-category-family.html"> <li class="bottomgen">family</li></a>
+                <a href="./movies-category-romance.html"> <li class="bottomgen">romance</li></a>
+                <a href="./movies-category-fantasy.html"> <li class="bottomgen">fantasy</li></a>
+                <a href="./movies-category-scifi.html"> <li class="bottomgen">sci-fi</li></a>
+                <a href="./movies-category-thiller.html"> <li class="bottomgen">thriller</li></a>
+                <a href="./movies-category-superheros.html"> <li class="bottomgen">superheros</li></a>
+                <a href="./movies-category-mystery.html"> <li class="bottomgen">mystery</li></a>
+            </ul>
+            
+            <ul id="ulicons">
+                <li><a href="https://www.facebook.com/aminbenzz/" target="blank"><i class="fa fa-facebook" aria-hidden="true" id="f"></i></a></li>
+                <li><a href="https://www.instagram.com/aminxbenz/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/amin-benz-30694b1b2/" target="blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        </div>
+                                    <!---------------- end menu bar--------------->
+        
+                                    <!---------------- nav1content--------------->
+        <div class="logo">
+        <a href="../index.html" style="color: rgb(255, 119, 95);">  Movies</a>
+        </div>
+            
+        <div class="empty"><i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        
+        <form action="">  <input type="search" name="search" id="search" placeholder="search movies"> </form>
+        <div class="icon2">
+                    <i class="fa fa-bell" aria-hidden="true"> </i>
+        </div>
+        <div class="img  dropdawnlg" id="lgprofile" ><img src="./logo/x.png" alt="">
+            <div class="dropdawncontentlg" id="lgprofilecontent">
+                <ul>
+                <a href="../MOVIES-LOGINxSIGNUP/YourAcount.html"> <li>your acount</li> </a>
+                <a href="../MOVIES-LOGINxSIGNUP/FavList.html">  <li>ur fav list  </li>  </a>
+                <a href="../MOVIES-LOGINxSIGNUP/SIGNUP.html"> <li class="signup-nav1">sign up</li> </a>
+                <a href="../MOVIES-LOGINxSIGNUP/LOGIN.html"> <li class="login-nav1">login</li> </a>
+                </ul>
+            </div>
+        </div>
+            
+        </div> <!--end nav1content-->
+        </div> <!--end nav1-->
+                        <!------------------------- nav2--------------->
+    
+    
+    <div class="nav2"style="display:none;">
+    <div class="nav2content">
+    <div class="nav2text dropdawn"> 
+        <h3 id="relasedate">relase date</h3>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <div class="dropdawncontent" id="dropdawnrelasedate">
+            <ul>
+                <li>relase date</li>
+                <li>most populare</li>
+                <li>most viewed</li>
+                <li>best tated</li>
+                <li>...</li>
+            </ul>
+        </div>
+        <h3>filter</h3>
+        <i class="fa fa-angle-down" aria-hidden="true" ></i>
+    
+        <h3 id="genre">genre</h3>
+        <i id="igenre" class="fa fa-chevron-right" aria-hidden="true"></i>
+    </div>
+    
+    <div id="genrep">
+        <div id="genre-content">
+        <ul id="genrehover">
+            <li> <a id="bb" href="./movies-category-action.html" target="" > action</li> </a>
+            <li> <a href="./movies-category-comedy.html" target="" > comedy</li> </a>
+            <li> <a href="./movies-category-drama.html" target="" > drama</li> </a>
+            <li> <a href="./movies-category-romance.html" target="" > romance</li> </a>
+            <li> <a href="./movies-category-tv-show.html" target="" >tv show</li> </a>
+            <li> <a href="./movies-category-horro.html" target="" > horro</li> </a>
+            <li> <a href="./movies-category-SciFi.html" target="" >sci-fi</li> </a>
+            <li> <a href="./movies-category-fantasy.html" target="" > fantasy</li> </a>
+        </div>
+        </div>
+    
+    
+    
+    <div class="nav2icons">
+    <a href="./MOVIES-2X/MOVIES2X.html"> <i class="fa fa-th-large" aria-hidden="true" id="i4"></i> </a> 
+    <a href=""></a> <i class="fa fa-th" aria-hidden="true" id="i8"></i>
+    </div>  <!--end nav2icons-->
+    </div> <!--end nav2content-->
+    </div><!--end nav2-->
+    
+    
+    <!--
+    <div class="nav2">
+    <div class="nav2content">
+    <div class="nav2text">
+        <h3>relase date</h3>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <h3>filter</h3>
+        <i class="fa fa-angle-down" aria-hidden="true" ></i>
+    </div>
+    <div class="nav2icons">
+    <a href="./MOVIES2X/MOVIES2X.html"> <i class="fa fa-th-large" aria-hidden="true" id="i4"></i> </a> 
+        <i class="fa fa-th" aria-hidden="true" id="i8"></i>
+    </div>  <!--end nav2icons-->
+    </div> <!--end nav2content-->
+
+<div class="categoryfilms">
+    <div class="categoryfilmspd">
+        <div class="categoryback"> 
+<h2 class="title">drama</h2>
+<a href="../index.html" style="color:white;"> <i class="fa fa-arrow-left " aria-hidden="true" id="iconback"></i> </a>
+        </div>
+ 
+<p>The silliest slapstick, the sharpest satire, and everything in between. 
+Tubi is not legally responsible for any busted guts or stitches in your side.
+</p>
+    </div>
+</div>
+<div class="movies">
+    <div class="moviescontent">
+       <a href=""> 
+           <div class="moviesposters">
+          <img src="./MOVIES-POSTERS/Drama/1-beauty-and-the-beast-drama.jpg" alt=""> 
+            <ul class="inmovies">
+              <li class="title"> beauty and the beast</li>
+              <div class="icons">
+              <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+              <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+            </div>
+            </ul>
+            <div class="stars">
+                <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+               </div>  
+               <div class="icondate">
+                   <h5>2016</h5>
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+               </div>
+            <div>
+                <h4 class="title">1-beauty and the beast</h4>
+                <h6 class="category">drama</h6>
+            </div>
+        </div>
+    </a>
+    <a href=""> 
+        <div class="moviesposters">
+       <img src="./MOVIES-POSTERS/Drama/2-epik-drama-.jpg" alt=""> 
+         <ul class="inmovies">
+           <li class="title"> epik </li>
+           <div class="icons">
+           <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+          <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+         </div>
+         </ul>
+         <div class="stars">
+             <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+             <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+             <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+             <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+             <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+            </div>  
+            <div class="icondate">
+                <h5>2020</h5>
+             <i class="fa fa-clock-o" aria-hidden="true"></i>
+            </div>
+         <div>
+             <h4 class="title">epik</h4>
+             <h6 class="category">drama</h6>
+         </div>
+     </div>
+ </a>
+ <a href=""> 
+    <div class="moviesposters">
+   <img src="./MOVIES-POSTERS/Drama/3-denial-drama.jpg" alt=""> 
+     <ul class="inmovies">
+       <li class="title">denial</li>
+       <div class="icons">
+       <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+       <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+     </div>
+     </ul>
+     <div class="stars">
+         <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+        </div>  
+        <div class="icondate">
+            <h5>2020</h5>
+         <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+     <div>
+         <h4 class="title">denial</h4>
+         <h6 class="category">drama</h6>
+     </div>
+ </div>
+</a>
+<a href=""> 
+    <div class="moviesposters">
+   <img src="./MOVIES-POSTERS/Drama/4-euphoria-drama.jpg" alt=""> 
+     <ul class="inmovies">
+       <li class="title"> euphoria</li>
+       <div class="icons">
+       <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+        <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+     </div>
+     </ul>
+     <div class="stars">
+         <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+        </div>  
+        <div class="icondate">
+            <h5>2010</h5>
+         <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+     <div>
+         <h4 class="title">ephoria</h4>
+         <h6 class="category">drama</h6>
+     </div>
+ </div>
+</a>
+<a href=""> 
+    <div class="moviesposters">
+   <img src="./MOVIES-POSTERS/Drama/5-titanik-drama.jpg" alt=""> 
+     <ul class="inmovies">
+       <li class="title"> titanik</li>
+       <div class="icons">
+       <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+        <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+     </div>
+     </ul>
+     <div class="stars">
+         <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+        </div>  
+        <div class="icondate">
+            <h5>1998</h5>
+         <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+     <div>
+         <h4 class="title">titanik</h4>
+         <h6 class="category">drama</h6>
+     </div>
+ </div>
+</a>
+<a href=""> 
+    <div class="moviesposters">
+   <img src="./MOVIES-POSTERS/Drama/6-losegirl-and-lovehoteles-2020.jpg" alt=""> 
+     <ul class="inmovies">
+       <li class="title"> lose girl</li>
+       <div class="icons">
+       <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+        <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+     </div>
+     </ul>
+     <div class="stars">
+         <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+        </div>  
+        <div class="icondate">
+            <h5>20213</h5>
+         <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+     <div>
+         <h4 class="title">lose girl</h4>
+         <h6 class="category">drama</h6>
+     </div>
+ </div>
+</a>
+<a href=""> 
+    <div class="moviesposters">
+   <img src="./MOVIES-POSTERS/Drama/7-neverletmego-drama.jpg" alt=""> 
+     <ul class="inmovies">
+       <li class="title"> never let me go</li>
+       <div class="icons">
+       <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+         <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+     </div>
+     </ul>
+     <div class="stars">
+         <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+        </div>  
+        <div class="icondate">
+            <h5>2020</h5>
+         <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+     <div>
+         <h4 class="title">never let me go</h4>
+         <h6 class="category">drama</h6>
+     </div>
+ </div>
+</a>
+<a href=""> 
+    <div class="moviesposters">
+   <img src="./MOVIES-POSTERS/Drama/8-parasite.jpg" alt=""> 
+     <ul class="inmovies">
+       <li class="title"> parasite</li>
+       <div class="icons">
+       <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+         <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+     </div>
+     </ul>
+     <div class="stars">
+         <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+        </div>  
+        <div class="icondate">
+            <h5>2019</h5>
+         <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+     <div>
+         <h4 class="title">parasite</h4>
+         <h6 class="category">drama / thiller</h6>
+     </div>
+ </div>
+</a>
+<a href=""> 
+    <div class="moviesposters">
+   <img src="./MOVIES-POSTERS/Drama/9-mother-less-broken-drama-2019.jpg" alt=""> 
+     <ul class="inmovies">
+       <li class="title"> mother less broken</li>
+       <div class="icons">
+       <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+         <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+     </div>
+     </ul>
+     <div class="stars">
+         <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+        </div>  
+        <div class="icondate">
+            <h5>2019</h5>
+         <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+     <div>
+         <h4 class="title">mother less broken</h4>
+         <h6 class="category">drama / mystery</h6>
+     </div>
+ </div>
+</a>
+<a href=""> 
+    <div class="moviesposters">
+   <img src="./MOVIES-POSTERS/Drama/10-myfriend-dahmer-drama-2017.jpg" alt=""> 
+     <ul class="inmovies">
+       <li class="title"> my friend dahmer</li>
+       <div class="icons">
+       <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+       <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+     </div>
+     </ul>
+     <div class="stars">
+         <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+        </div>  
+        <div class="icondate">
+            <h5>2017</h5>
+         <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+     <div>
+         <h4 class="title">my frien dahmer</h4>
+         <h6 class="category">drama</h6>
+     </div>
+ </div>
+</a>
+<a href=""> 
+    <div class="moviesposters">
+   <img src="./MOVIES-POSTERS/Drama/11-thetoriste.jpg" alt=""> 
+     <ul class="inmovies">
+       <li class="title"> the toriste</li>
+       <div class="icons">
+       <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+       <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+     </div>
+     </ul>
+     <div class="stars">
+         <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+        </div>  
+        <div class="icondate">
+            <h5>2010</h5>
+         <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+     <div>
+         <h4 class="title">the toriste</h4>
+         <h6 class="category">drama</h6>
+     </div>
+ </div>
+</a>
+<a href=""> 
+    <div class="moviesposters">
+   <img src="./MOVIES-POSTERS/Drama/12-joker.jpg" alt=""> 
+     <ul class="inmovies">
+       <li class="title"> joker</li>
+       <div class="icons">
+       <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+        <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+     </div>
+     </ul>
+     <div class="stars">
+         <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+        </div>  
+        <div class="icondate">
+            <h5>2020</h5>
+         <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+     <div>
+         <h4 class="title">joker</h4>
+         <h6 class="category">drama / action</h6>
+     </div>
+ </div>
+</a>
+<a href=""> 
+    <div class="moviesposters">
+   <img src="./MOVIES-POSTERS/Drama/13freeall.jpg" alt=""> 
+     <ul class="inmovies">
+       <li class="title"> free all</li>
+       <div class="icons">
+       <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+        <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+     </div>
+     </ul>
+     <div class="stars">
+         <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+        </div>  
+        <div class="icondate">
+            <h5>2020</h5>
+         <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+     <div>
+         <h4 class="title">free all</h4>
+         <h6 class="category">drama</h6>
+     </div>
+ </div>
+</a>
+<a href=""> 
+    <div class="moviesposters">
+   <img src="./MOVIES-POSTERS/Drama/14-yong-pal-drama.jpg" alt=""> 
+     <ul class="inmovies">
+       <li class="title"> young pal</li>
+       <div class="icons">
+       <i class="fa fa-play fa-4x" aria-hidden="true" id="play" ></i> 
+        <i class="fa fa-heart" aria-hidden="true" id="fav"></i>
+     </div>
+     </ul>
+     <div class="stars">
+         <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+         <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+        </div>  
+        <div class="icondate">
+            <h5>2020</h5>
+         <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+     <div>
+         <h4 class="title">young pal</h4>
+         <h6 class="category">drama</h6>
+     </div>
+ </div>
+</a>  
+    </div><!--endmovies content-->
+</div> <!--end movies-->
+
+
+<script src="../js/js.js"></script>
+</body>
+</html>

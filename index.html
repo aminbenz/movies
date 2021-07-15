@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                                               <title>Movies | home</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+              <!------arabic font "font-family: 'Tajawal', sans-serif;"------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+             <!--------english font "  font-family: 'Poppins and roboto', sans-serif;"---------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="./css/font-awesome.min.css ">
+    <link rel="stylesheet" href="./css/NAV.css">
+    <link rel="stylesheet" href="./css/MOVIES.css">
+    <link rel="stylesheet" href="./css/DIR-RTL.css">
+    <link rel="stylesheet" href="./css/main.scss">
+
+    <link rel="stylesheet" href="./css/Button.css">
+    
+</head>
+<body>
+
+
+ <!---------------- loader and change colors demo--------------->
+ <div id="loader-bk">
+    <div class="loader">Loading...</div>
+ </div>
+ 
+ <aside class="sidebar">
+    <div class="sidebar-content">
+        <div class="close-sidebar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div> 
+        
+     </div> 
+</aside> 
+                            <!---------------- navbar--------------->
+<nav class="navbar">
+<div class="navbar-content">
+    <div class="left-items">
+        <div style="cursor: pointer;" class="sidebar-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </div>
+        <a class="logo" href="index.html">  <img title="logo" width="110" height="25" src="./logo/AMINbleugary.jpg" alt="" ></a>
+    </div>
+    
+    
+
+
+<div class="flex-end">
+
+
+<input id="search" type="search" name="search" placeholder="search movies..." >
+                       <!---------------- navbar notifiacation--------------->
+ <div class="notification" title="Notification">
+    <i class="fa fa-bell" aria-hidden="true"> </i>
+    <span class="notification-number">3</span>
+
+    <div class="inner-notification box-shadow">
+        <div class="img-notifiacation"> <img src="../MOVIES/MOVIES-POSTERS/19dunkirk.jpg" alt=""></div>
+        <div class="info-notification">
+            <h3>star wars III</h3>
+            <h6>3 days ago</h6>
+            <button class="watch-now">watch now
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg> 
+            </button>
+            <button class="watch-trailer"> watch trailer </button>
+        </div>
+    </div>
+ </div>
+          <!---------------- navbar profile--------------->
+
+ <div id="sign_up" title="sign up">
+    <a href="./MOVIES-login-and-signup/SIGNUP.html" class="btn-hover"> sign up</a>
+</div>
+
+ <div class="img dropdawnlg" id="lgprofile" class="user_brand" title="your profile"  >
+     <span id="span"></span>
+    <div class="dropdawn-content-logo box-shadow " id="lgprofilecontent" class="user_brand_dp">
+        <ul>
+           <li> <a href="./MOVIES-LOGINxSIGNUP/YourAcount.html" id="my-name" class="">amin benz</a> </li>
+
+           <li> <a href="./MOVIES-LOGINxSIGNUP/YourAcount.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            my profile</a> </li>
+
+           <li> <a href="./MOVIES-LOGINxSIGNUP/FavList.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+            my list </a> </li> 
+
+           <li class="signup-navbar"> 
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            setting</a> </li> 
+
+           <li class="langs" style="display: flex;flex-direction: row;align-items: center;justify-content: center;"> <a href="#" id="ar-lang">AR</a> <span class="" style="width: 60%;height: 1px;background-color: rgb(102, 102, 102);"></span> <a href="#" id="en-lang">EN</a> </li>
+         
+
+           <li class="login-navbar" id="logout"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+            log out</a> </li> 
+        </ul>
+    </div>
+</div>
+
+</div>
+
+
+</div> <!--end navbar-content-->
+</div>   <!--end container-->
+</div> <!--end navbar-->
+
+                           <!------------------------- nav2--------------->
+<div class="nav2 box-shadow">
+<div class="nav2-content">   
+<div class="right">
+
+<!--relase date-->
+<div class="relase-date">
+    <div id="relase-date-title">
+        <h3 style="padding-left:0px ;">relase date </h3>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </div>
+    <div class="dropdawn-content-relaseDate box-shadow " id="dropdawn-relasedate" >
+        <ul>
+            <li>
+                <a href="#" class="">Top Tranding</a> 
+            </li>
+
+            <li>
+                <a href="#" class="">Latest Movies</a> 
+            </li>
+
+            <li>
+                <a href="#" class="">Most Viewed</a> 
+            </li>
+
+            <li>
+                <a href="#" class="">Best Rated</a> 
+            </li>
+            <li>
+                <a href="#" class="">Best Rated</a> 
+            </li>
+
+        </ul>
+    </div>
+</div>
+   
+
+<!--filter-->
+<div class="filter">
+    <div id="generalfilter" class="filter-title">
+        <h3 >filter</h3>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </div>
+    
+        <div class="filter-dropdawn box-shadow" id="generalfiltercontent"> 
+            <ul>
+                <li>popular</li>
+                <li>top trending</li>
+                <li>most watched</li>
+                <li>best rated</li>
+            </ul>
+            <ul>
+                <li>genres</li>
+                <li>comedy</li>
+                <li>drama</li>
+                <li>romance</li>
+                <li>horror</li>
+                <li>tv-show</li>
+                <li>family</li>
+                <li>fantasy</li>
+                <li>sci-fi</li>
+                <li>thriller</li>
+                <li>super-heros</li>
+                <li>adventure</li>
+                <li>war</li>
+                <li>history</li>
+                <li>crime</li>
+            </ul>
+            <ul>
+                <li>type</li>
+                <li>movies</li>
+                <li>TV-series</li>
+            </ul>
+            <ul>
+                <li>year</li>
+                <li>2020</li>
+                <li>2019</li>
+                <li>2018</li>
+                <li>2017</li>
+                <li>2016</li>
+                <li>2015</li>
+                <li>2014</li>
+                <li>2013</li>
+                <li>2012</li>
+            </ul>
+            <ul>
+                <li> quality</li>
+                <li> 4K</li>
+                <li> FHD</li>
+                <li> bluray</li>
+                <li> HD</li>
+                <li> HDbrip</li>
+                <li> HDrip</li>
+                <li> HDcam</li>
+            </ul>
+            <ul>
+                <li> sort-info</li>
+                <li> default</li>
+                <li> recently added</li>
+                <li> most watched</li>
+                <li> name</li>
+                <li> IMDB</li>
+                <li> relase date</li>
+            </ul>
+        
+        </div>
+    
+    <!--end filter-->
+</div>
+<!--genre-content-->
+<div class="nav-genre">
+    <div id="genre-title">
+        <h3>genre</h3>
+        <i id="igenre" class="fa fa-angle-right" aria-hidden="true"></i>
+    </div>
+    
+
+<div id="genrep">
+    <div id="genre-content">
+    <ul id="genrehover">
+        <li> <a id="bb" href="./MOVIES-CATEGORY/movies-category.html" target="" > action</li> </a>
+        <li> <a href="#" target="" > comedy</li> </a>
+        <li> <a href="#" target="" > drama</li> </a>
+        <li> <a href="#" target="" > romance</li> </a>
+        <li> <a href="#" target="" >tv-show</li> </a>
+        <li> <a href="#" target="" > horror</li> </a>
+        <li> <a href="#" target="" >sci-fi</li> </a>
+        <li> <a href="#" target="" > fantasy</li> </a>
+    </ul>
+    </div> <!--genre-content-->
+    </div>  <!--end genre--->
+</div>
+</div>                                                             <!-- end right--->
+
+<div class="left">
+<!--icons-->
+<div class="s4">
+<div class="nav2icons">
+<a href="./MOVIES-2X/MOVIES2X.html"> <i class="fa fa-th-large" aria-hidden="true" id="i4"></i> </a> 
+    <a href=""></a> <i class="fa fa-th" aria-hidden="true" id="i8"></i>
+</div>  <!--end icons-->    
+</div> 
+
+</div>                                                                 <!-- end left--> 
+</div> <!--end nav2-content-->
+</div><!--end nav2-->
+
+<!------------------------------- btn go to top-------------------- -->
+    <button title="go to top" id="btn-to-top" class="btn-hover" class="box-shadow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg></button>
+
+             <!------------------------------ movies top tranding-------------------------------->
+<div class="movies">
+    <div class="container">
+        
+   <div class="in">
+    <h3 class="title-category title" id="#top-tranding">top tranding</h3>
+    <a href="./MOVIES-CATEGORY/movies-category.html" class="title-category viewmore"> view more</a>
+   </div>
+
+   <div class="moviescontent" id="moviesJs">
+   
+    </div>
+   
+</div> <!--endcontainer-->
+  
+</div> <!--endmovies content-->
+    
+
+             <!------------------------------ movies latest movies------------------------------->
+ <div class="movies">
+    <div class="container">
+
+                <div class="in">
+                    <h3 class="title-category title">latest movies</h3>
+                    <a href="" class="title-category viewmore"> view more</a>
+                   </div>
+
+    <div class="moviescontent">
+        <div class="moviesposters">
+           <div id="imaget"> <img id="abc" src="./MOVIES-POSTERS/14starwars.jpg" alt=""> </div>
+            <ul class="inmovies">
+                <li class="titleinmovie"> star wars</li>
+              <div class="block">  <i class="fa fa-clock-o" aria-hidden="true" id="icondate">  </i>2020 </div>
+              <a href="#" id="playa"> 
+                  
+                <svg id="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>Play</title>
+                  <desc>A line styled icon from Orion Icon Library.</desc>
+                  <path data-name="layer2"
+                  fill="none" stroke="#3b5998" stroke-miterlimit="10" stroke-width="2" d="M24 18l24 14-24 14V18z"
+                  stroke-linejoin="round" stroke-linecap="butt"></path>
+                  <circle data-name="layer1" cx="32" cy="32" r="30" fill="none" stroke="#3b5998"
+                  stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt"></circle>
+                </svg>
+               
+            </a>
+            <div class="stars">
+                <div></div>
+                <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+               </div>  
+            </ul>
+            
+            <div>
+                <h4 class="title">star wars</h4>
+                <h6 class="category">sci-fi, adventure</h6>
+            </div>
+           
+                
+         
+        </div>
+
+        <div class="moviesposters">
+            <img src="./MOVIES-POSTERS/15sully.jpg" alt="">
+            <ul class="inmovies">
+                <li class="titleinmovie"> sully</li>
+              <div class="block"> 2019  <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+             <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+            </ul>
+                     <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">sully </h4>
+                <h6 class="category">crime / drama </h6>
+            </div>
+        </div> <div class="moviesposters">
+            <img src="./MOVIES-POSTERS/16logan.jpg" alt="">
+            <ul class="inmovies">
+                <li class="titleinmovie"> logan</li>
+              <div class="block"> 2018 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+              <a href="" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a> 
+            </ul>
+             <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">logan</h4>
+                <h6 class="category"> drama / thriller</h6>
+            </div>
+        </div> <div class="moviesposters">
+            <img src="./MOVIES-POSTERS//17thetoriste.jpg" alt="">
+            <ul class="inmovies">
+                <li class="titleinmovie"> the toriste</li>
+              <div class="block">  2010 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+             <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+            </ul>
+             <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">the toriste</h4>
+                <h6 class="category">drama / family</h6>
+            </div>
+        </div> <div class="moviesposters">
+            <img src="./MOVIES-POSTERS//18mandy.jpg" alt="">
+            <ul class="inmovies">
+                <li class="titleinmovie"> mandy</li>
+
+              <div class="block"> 2019 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+            <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+            
+            </ul>
+             <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">mandy</h4>
+                <h6 class="category">action / drama</h6>
+            </div>
+        </div> <div class="moviesposters">
+            <img src="./MOVIES-POSTERS/19dunkirk.jpg" alt="">
+            <ul class="inmovies">
+                <li class="titleinmovie"> dunkirk</li>
+
+              <div class="block">2017  <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+           <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+            
+            </ul>
+             <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">dunkirk</h4>
+                <h6 class="category"> action / war </h6>
+            </div>
+        </div> <div class="moviesposters">
+            <img src="./MOVIES-POSTERS/20theongroad.jpg" alt="">
+            <ul class="inmovies">
+                <li class="titleinmovie"> the on road</li>
+              <div class="block"> 1990 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+            <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+            </ul>
+             <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">the on roed</h4>
+                <h6 class="category">action / thriller</h6>
+            </div>
+        </div>
+        <div class="moviesposters">
+            <img src="./MOVIES-POSTERS/10harrypotter.jpg" alt="">
+            <ul class="inmovies">
+                <li class="titleinmovie"> harry potter</li>
+              <div class="block">2106  <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+            <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+            </ul>
+             <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">hary potter</h4>
+                <h6 class="category">fantasy / thriller</h6>
+            </div>
+        </div>
+        <div class="moviesposters">
+            <img src="./MOVIES-POSTERS/8parasite.jpg" alt="">
+            <ul class="inmovies">
+                <li class="titleinmovie"> parasite</li>
+              <div class="block"> 2019 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+          <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+            </ul>
+             <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">parasite</h4>
+                <h6 class="category">thriller / comedy</h6>
+            </div>
+        </div>
+      <div class="moviesposters">
+            <img src="./MOVIES-CARD/movies-card-cover/1123864.jpg" alt="">
+            <ul class="inmovies">
+                <li class="titleinmovie"> maleficent</li>
+                <i class="block"> 2014 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </i>
+                <a href="./MOVIES-CARD/movies-card.html" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+            </ul>
+             <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">maleficent</h4>
+                <h6 class="category"> adventure / drama</h6>
+            </div>
+        </div>
+         <div class="moviesposters">
+            <img src="./MOVIES-POSTERS/10harrypotter.jpg" alt="">
+            <ul class="inmovies">
+                <li class="titleinmovie"> harry potter</li>
+              <div class="block">2009  <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+              <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+            </ul>
+             <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">harry potter</h4>
+                <h6 class="category">fantasy / family </h6>
+            </div>
+        </div> <div class="moviesposters">
+            <img src="./MOVIES-POSTERS/11bladerunner.jpg" alt="">
+            <ul class="inmovies">
+                <li class="titleinmovie"> blade runner</li>
+              <div class="block">  2011 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"></i> </div>
+              <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+            </ul>
+             <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">blade runner</h4>
+                <h6 class="category">sci-fi / action</h6>
+            </div>
+        </div> <div class="moviesposters">
+            <img src="./MOVIES-POSTERS/12shutterisland.jpg" alt="">
+            <ul class="inmovies">
+                <li class="titleinmovie"> shutter island</li>
+              <div class="block"> 2018 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+              <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+            </ul>
+             <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">shutter island</h4>
+                <h6 class="category">thriller / mystery</h6>
+            </div>
+        </div> <div class="moviesposters">
+            <a href="https://filmvault.info/thefighter.html" target="blank" id="az">    <img src="./MOVIES-POSTERS/13freeall.jpg" alt="">  </a> 
+         <ul class="inmovies">
+                <li class="titleinmovie"> free all</li>
+              <div class="block">
+                <span id="date">2020</span>
+                <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+              <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+            </ul>
+             <div class="stars">
+                      <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+                      <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+                     </div>  
+            <div>
+                <h4 class="title">free all</h4>
+                <h6 class="category">drama</h6>
+            </div>
+        </div>
+       
+      
+    </div><!--endmovies content-->
+
+</div> <!--endcontainer-->
+
+</div> <!--end movies-->
+
+            <!------------------------------ movies most viewd------------------------------->
+<div class="movies">
+
+    <div class="container">
+
+    <div class="in">
+        <h3 class="title-category title" id="mostv">most viewed</h3>
+        <a href="" class="title-category viewmore"> view more</a>
+       </div>
+
+<div class="moviescontent" id="moviesJs">
+<div class="moviesposters">
+<img src="./MOVIES-POSTERS/14starwars.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> star wars</li>
+  <div class="block"> 2020 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+  <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+</ul>
+<div class="stars">
+    <div></div>
+    <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+    <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+    <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+    <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+    <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+   </div>  
+<div>
+    <h4 class="title">star wars</h4>
+    <h6 class="category">sci-fi, adventure</h6>
+</div>
+
+    
+
+</div>
+
+<div class="moviesposters">
+<img src="./MOVIES-POSTERS/15sully.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> sully</li>
+  <div class="block"> 2019  <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+ <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+</ul>
+         <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">sully </h4>
+    <h6 class="category">crime / drama </h6>
+</div>
+</div> <div class="moviesposters">
+<img src="./MOVIES-POSTERS/16logan.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> logan</li>
+  <div class="block"> 2018 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+  <a href="" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a> 
+</ul>
+ <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">logaz az az</h4>
+    <h6 class="category"> dr    ailler</h6>
+</div>
+</div> <div class="moviesposters">
+<img src="./MOVIES-POSTERS//17thetoriste.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> the toriste</li>
+  <div class="block">  2010 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+ <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+</ul>
+ <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">the toriste</h4>
+    <h6 class="category">drama / family</h6>
+</div>
+</div> <div class="moviesposters">
+<img src="./MOVIES-POSTERS//18mandy.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> mandy</li>
+
+  <div class="block"> 2019 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+<a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+
+</ul>
+ <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">mandy</h4>
+    <h6 class="category">action / drama</h6>
+</div>
+</div> <div class="moviesposters">
+<img src="./MOVIES-POSTERS/19dunkirk.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> dunkirk</li>
+
+  <div class="block">2017  <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+<a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+
+</ul>
+ <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">dunkirk</h4>
+    <h6 class="category"> action / war </h6>
+</div>
+</div> <div class="moviesposters">
+<img src="./MOVIES-POSTERS/20theongroad.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> the on road</li>
+  <div class="block"> 1990 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+<a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+</ul>
+ <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">the on roed</h4>
+    <h6 class="category">action / thriller</h6>
+</div>
+</div>
+<div class="moviesposters">
+<img src="./MOVIES-POSTERS/10harrypotter.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> harry potter</li>
+  <div class="block">2106  <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+<a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+</ul>
+ <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">hary potter</h4>
+    <h6 class="category">fantasy / thriller</h6>
+</div>
+</div>
+<div class="moviesposters">
+<img src="./MOVIES-POSTERS/8parasite.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> parasite</li>
+  <div class="block"> 2019 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+<a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+</ul>
+ <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">parasite</h4>
+    <h6 class="category">thriller / comedy</h6>
+</div>
+</div>
+<div class="moviesposters">
+<img src="./MOVIES-POSTERS/9avengers.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> the avengers</li>
+    <i class="block"> 2018 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </i>
+    <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+</ul>
+ <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">the avengers</h4>
+    <h6 class="category"> action / sci-fi</h6>
+</div>
+</div>
+<div class="moviesposters">
+<img src="./MOVIES-POSTERS/10harrypotter.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> harry potter</li>
+  <div class="block">2009  <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+  <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+</ul>
+ <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">harry potter</h4>
+    <h6 class="category">fantasy / family </h6>
+</div>
+</div> <div class="moviesposters">
+<img src="./MOVIES-POSTERS/11bladerunner.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> blade runner</li>
+  <div class="block">  2011 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"></i> </div>
+  <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+</ul>
+ <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">blade runner</h4>
+    <h6 class="category">sci-fi / action</h6>
+</div>
+</div> <div class="moviesposters">
+<img src="./MOVIES-POSTERS/12shutterisland.jpg" alt="">
+<ul class="inmovies">
+    <li class="titleinmovie"> shutter island</li>
+  <div class="block"> 2018 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+  <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+</ul>
+ <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">shutter island</h4>
+    <h6 class="category">thriller / mystery</h6>
+</div>
+</div> <div class="moviesposters">
+<a href="https://filmvault.info/thefighter.html" target="blank" id="az">    <img src="./MOVIES-POSTERS/13freeall.jpg" alt="">  </a> 
+<ul class="inmovies">
+    <li class="titleinmovie"> free all</li>
+  <div class="block">2019 <i class="fa fa-clock-o" aria-hidden="true" id="icondate"> </i> </div>
+  <a href="#" id="playa"> <i class="fa fa-play fa-2x" aria-hidden="true" id="play" ></i> </a>
+</ul>
+ <div class="stars">
+          <i class="fa fa-star" aria-hidden="true" id="i1"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i2"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i3"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i4"></i>
+          <i class="fa fa-star" aria-hidden="true" id="i5"></i>
+         </div>  
+<div>
+    <h4 class="title">free all</h4>
+    <h6 class="category">drama</h6>
+</div>
+</div>
+
+
+</div><!--endmovies content-->
+
+</div> <!--endcontainer-->
+
+</div> <!--end movies-->
+
+
+<!--********************** trailer ***************** -->
+<!-- <iframe  class="iframe1"  style="aspect-ratio: 16 / 9;width: 100%;" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<div class="trailer" style="margin-top: 150px;">
+    <div class="movies">
+    <div class="in">
+        <h3 class="title-category title" >tailer</h3>
+        <a href="" class="title-category viewmore"> view more</a>
+       </div>
+    <div class="trailer-containt">
+        <div class="youtube" id="youtube-js"><iframe class="iframe1" width="853" height="480" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="section-youtube" id="trailer-dom">
+         <!-- js dom here  -->
+        </div>
+    </div><!------------------end trailer content ------------------->
+     </div>   <!------------------end movies ------------------->
+</div><!------------------end trailer ------------------->
+
+<div class="email">
+    <div class="email-content">
+        <div class="overlay">  </div> <!-----------------end over lay--------------------->
+        <div class="img"></div>
+        <div class="info-email">
+            <h2> join now for free</h2>
+            <div class="border-buttom"></div>
+            <p>enter your email to get free  unlimited movies and all news </p>
+            <form action="">
+                <input type="email" name="email" id="email" placeholder="enter your email..." >
+                <!-- <input class="btn-hover" type="submit" value="get started" id="submit"> -->
+                <a   href="./MOVIES-login-and-signup/SIGNUP.html" class="btn btn-big" data-sm-link-text="CLICK" target="_blank"><span>sign_up</span></a>
+                  
+            </form>
+        </div> <!--------------------end info email---------------------->
+   
+</div> <!--------------------end email content----------------------->
+</div> <!----------------------end email---------------------->
+
+                        <!--------------------------footer---------------------------->
+<footer>
+<div class="section1">
+<div class="footer-logo"> <img src="./logo/AMINbleublack.png" alt=""></div>
+<div class="socialmedia">
+
+<a href="https://www.facebook.com/aminbenzz/" target="blank">
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+</a>
+
+<a href="https://www.instagram.com/aminxbenz/" target="blank">
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+</a>
+
+<a href="https://www.linkedin.com/in/amin-benz-30694b1b2/" target="blank">
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+</a>
+
+</div>
+</div>   <!-------------------end section1---------->
+
+<div class="section2">
+<ul>
+    <h4>company</h4>
+  <a href=""> <li> about us</li> </a>
+  <a href=""> <li> contact</li>  </a>
+  <a href=""> <li>carrers</li>   </a>
+</ul>
+
+<ul>
+    <h4>support</h4>
+    <a href=""> <li> contact suport</li> </a>
+    <a href=""> <li> help center</li>  </a>
+    <a href=""> <li>carrers</li>   </a>
+  </ul>
+
+  <ul>
+    <h4>partners</h4>
+    <a href=""> <li> partners with us</li> </a>  
+  </ul>
+
+  <ul>
+    <h4>get the app</h4>
+    <a href=""> <li> IOS</li> </a>  
+    <a href=""> <li> android</li> </a>  
+    <a href=""> <li> soon</li> </a>  
+  </ul>
+
+<ul>
+    <h4>contact</h4>
+    <a href=""> <li> about me</li> </a>  
+    <a href=""> <li> contact me</li> </a>  
+</ul>
+
+<ul>
+    <h4>legal</h4>
+     <a href=""> <li> privicy policy</li> </a>  
+     <a href=""> <li> termes of use</li> </a>  
+</ul>  
+</div>
+
+<div class="article">
+    <p> copy right 2020 benz. Inc</p>
+    <p>hey .. i love u</p>
+    <p> thnx for visit my website</p>
+</div>
+</footer>
+      <div class="">
+        <div>
+</div>
+      </div>  
+      <div cma  ></div> 
+         
+ <script src="./js/js.js"></script>
+ <script src="./js/check-user.js"></script>
+ <script src="./js/lang-dir.js"></script>
+ <script src="./js/database.js"></script>
+ <script src="./js/script.js"></script>
+ <script src="./js/search.js"></script>
+ <script src="./js/trailer.js"></script>
+ <!-- <script src="./js/light-mode.js"></script> -->
+ <script src="./js/main.js"></script>
+ <script src="./js/sidebar.js"></script>
+
+</body>
+</html>

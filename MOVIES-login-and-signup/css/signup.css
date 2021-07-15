@@ -1,0 +1,14 @@
+label{display: none;}
+label:last-child{display: block;}
+
+input#password, input#email, input#fullname{margin: 15px 0;}
+
+h3.title{width: 300px;
+margin: 0 auto;}
+.login p.desc{  
+padding: 5px 10px;    
+text-align: center;
+font-weight: 400;
+font-size: 13px;
+color: #cecece;
+line-height: 1.6;}

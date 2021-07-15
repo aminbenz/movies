@@ -1,0 +1,123 @@
+html{scroll-behavior: smooth;}
+.movie-card-content p::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  .movie-card-content p::-webkit-scrollbar-track {
+    background: var(--blackh);        /* color of the tracking area */
+  }
+  .movie-card-content p::-webkit-scrollbar-thumb {
+    background-color: rgba(126, 126, 126, 0.603);    /* color of the scroll thumb */
+    border-radius: 1px;  }
+
+
+
+                     /* *******************************  movie-card  **********************/
+.movie-card-all{padding: 35px;
+margin: 30px 20px;
+border-radius: 3px;
+background-color: #262627;background-color: #212122;}  
+                  
+.movie-card-content{display: grid;
+/* grid-template-columns: 20% 57% 23%; */
+grid-template-columns: 245px auto 1fr;
+grid-template-rows: 370px;
+grid-column-gap: 25px;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+.movie-card-img{width:100% ;height: 100%;position: relative;opacity: 1;cursor: pointer;}
+.movie-card-img img{width:100% ;height: 100%;transition: opacity 0.3s ease-in-out;object-fit: cover;}
+.movie-card-img .play{position: absolute;opacity: 0;transition: opacity 0.3s ease-in-out;
+top: 50%;left: 50%;transform: translate(-50%,-50%);
+max-width: 100px;max-height: 100px;}
+.movie-card-img .play i{font-size: 55px;transition: all .3s;transform: scale(1);color: gainsboro;}
+.movie-card-info{color: rgb(251, 251, 251);}
+.movie-card-content .title{text-transform: uppercase;font-size: 35px;font-weight:400 ;letter-spacing: 3px;color: white;
+margin: -2px 0;}
+.movie-card-info li{display: inline-block;text-transform: capitalize;letter-spacing: 0.3px;}
+.moreinfo-top li{font-size: 14.2px;font-weight: 300;word-spacing: 2px;
+color:rgba(255, 255, 255, 0.582);
+margin-bottom:12px;}
+#rate{display: none;
+  margin-left:200px;font-weight:500; font-size:15px;
+}
+.moreinfo-buttom{margin-top: 20px;display: flex;flex-direction: column; }
+.moreinfo-buttom li{font-size: 15px;font-weight: 600;margin: 4px  0px 4px 0px;}
+.moreinfo-buttom span + span{
+ font-weight: 300;margin-left:20px;}
+.movie-card-content p{
+font-size: 14px;font-weight: 300;margin: 5px 0;
+min-height: 100px;
+max-width: 700px;max-height:142px ;
+overflow: hidden;}
+
+
+.movie-card-img:hover .play{opacity: 1;}
+.movie-card-img:hover img{opacity: 0.8;transition: opacity 0.3s ease-in-out;}
+.movie-card-img .play i:hover{transform: rotate(-10deg);}
+
+
+                       /* ********************  section-2   ****************************/
+
+.container{width: 95%;margin: auto;}
+.section-2{display: flex; 
+flex-direction: row;
+justify-content: space-between;align-items: center;
+border-bottom: 1px solid rgba(107, 94, 94, 0);  }
+
+.buttoms{flex-basis: 245px;}
+.buttoms button{width: 100%;height: 35px;margin-top: 7px;color: white;
+border: none;border-radius: 2px;font-size:13px ;font-weight: 300;text-transform:capitalize ;
+transition-property: color,background-color;transition-duration:  0.2s;cursor: pointer;}
+
+.add button{background-color: var(--bg-navbar);}
+.watch-now button{background-color: var(--maincolor);}
+
+.add button:hover{color: whitesmoke;background-color: rgba(65, 65, 65, 0.938);}
+
+.right-recommended{opacity:0 ;
+box-sizing: border-box;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-row:repeat(2,1fr);
+grid-gap: 20px;
+}
+.right-recommended div{
+/* min-width: 100px;
+height: 170px; */
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(27, 26, 27);
+border: 1px solid rgb(44, 44, 44);
+
+}
+
+
+                       /* ********************  section-vote   ****************************/
+
+.section-vote{display: flex;justify-content: center;align-items: center;}
+
+.section-vote span{font-size: 17px; 
+text-align: center;line-height: 55px;
+width: 55px;height:55px;
+border:2px solid var(--maincolor);border-radius: 50%;}
+
+.section-vote p{font-size: 16px;text-transform: capitalize;
+margin: 0 40px 0 10px ;}
+
+.vote-icons svg {font-size: 18px;
+  border: 1px solid rgba(126, 126, 126, 0.137);
+  border-radius: 50%;padding: 12px;
+  margin: 0 3px;
+  transition: all 0.s ease-in-out;
+  cursor: pointer;}
+.vote-icons svg:first-child:hover{color: #517693	;}
+.vote-icons svg:nth-child(2):hover{color: rgb(177, 23, 23);}
+.vote-icons svg:last-child:hover{color: #407ad6;}
+.vote-icons svg:last-child{margin-left: 20px;}
+
+                       /* ********************  box wwatch   ****************************/
+.movie-box{}                       
+.width-box{width:1000px;   margin: 50px auto;background-color:var(--blackh);}

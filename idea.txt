@@ -1,0 +1,6 @@
+1 -  create user profile
+2 -  when tap in any category - go to category and filter items 
+3 -  add to fav and to watch later
+4 - create user profile ui and save list 
+5 - fix arabic langue
+6 - fix reserch 
